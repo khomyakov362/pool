@@ -1,4 +1,24 @@
 
+.important-text {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 32, 32);
+}
+
+.main-text {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 32, 32);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 32, 32);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 header nav {
     box-sizing: border-box;
     display: flex;
@@ -34,8 +54,6 @@ header nav > * {
 }
 
 #location p {
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-wrap: pretty;
     padding: none;
     margin: none;
@@ -45,8 +63,51 @@ header nav > * {
     width: 20%;
     height: 100px;
     font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(33, 32, 32);
     margin-left: 20px;
     text-wrap: pretty;
+}
+
+#lower-nav a {
+    display: block;
+    width: 20%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+main {
+    padding: 0 0 !important;
+}
+
+section {
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    padding: 10% 10%;
+}
+
+footer > * {
+    display: block;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    padding: 0 100px !important;
+}
+
+footer p {
+    text-wrap: pretty;
+}
+
+#social-media {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media img {
+    display: block;
+    width: 100px;
 }
