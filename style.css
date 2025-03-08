@@ -28,12 +28,6 @@ header nav {
     height: 200px;
 }
 
-/* 
-header nav > * {
-    display: block;
-}
-*/
-
 #logo {
     width: 15%;
     max-width: 200px;
@@ -110,4 +104,10 @@ footer p {
 #social-media img {
     display: block;
     width: 100px;
+}
+
+#submit-button {
+    margin-top: 40px;
+    display: block;
+    justify-self: center;
 }
