@@ -17,22 +17,27 @@
                 <img src="imgs/location-sign.svg" alt="location-icon">
                 <p class="important-text">Академика Королева, д. 3</p>
             </div>
-            <a href="/form.html" class="btn btn-success important-text" id="call-button">
-                <div>Заказать звонок</div>
-            </a>
+            <p class="important-text">
+                8-919-354-52-02<br>
+                Бесплатный звонок по всей России
+            </p>
         </nav>
         <nav class="navbar navbar-expand">
             <div id="lower-nav" class="container-fluid">
                 <a class="btn btn-success important-text" href="#">Главная</a>
                 <a class="btn btn-success important-text" href="#">Цены</a>
-                <a class="btn btn-success important-text" href="/form.html">Забронировать</a>
-                <a class="btn btn-success important-text" href="#">Обучение</a>
+                <a class="btn btn-success important-text" href="#">О нас</a>
+                <a class="btn btn-success important-text" href="#">Галерея</a>
             </div>
         </nav>
     </header>
 
     <main class="container-fluid">
+        <section>
         <div id="carousel_main" class="carousel slide" data-bs-ride="carousel">
+        <button type="button" class="btn btn-success important-text" data-bs-toggle="modal" data-bs-target="#book-dialog" id="call-button">
+            <div>Забронировать</div>
+        </button>
         <div class="carousel-inner">
             <div class="carousel-item active">
             <img src="imgs/carousel1.jpg" class="d-block w-100" alt="carousel_img_1">
@@ -64,7 +69,48 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+        </div>
+        </section>
+
+        <div class="modal fade" id="book-dialog" tabindex="-1" role="dialog" aria-labelledby="book-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="book-title" class="important-text">Бронирование стола</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <legend class="important-text" id="form-legend">
+                            Оставьте свою заявку и с вами свяжется наш администратор в ближайшее время.
+                        </legend>
+                        <div class="mb-3">
+                            <label class="form-label important-text" for="customer-name">Введите имя</label>
+                            <input type="text" class="form-control form-control-lg main-text" id="customer-name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label important-text" for="customer-tel">Введите номер телефона</label>
+                            <input type="tel" class="form-control form-control-lg main-text" id="customer-tel">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label important-text" for="table-type">Выберите тип стола</label>
+                            <select id="table-type" class="form-select form-select-lg main-text">
+                                <option selected value="russian">Русский бильярд</option>
+                                <option value="pool">Пул</option>
+                                <option value="snooker">Снукер</option>
+                            </select>
+                        </div>
+                        <div id="form-buttons">
+                        <button id="submit-button" type="button" class="btn btn-success important-text" data-bs-dismiss="modal">Отправить</button>
+                        <button type="button" class="btn btn-danger important-text" data-bs-dismiss="modal">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
         <section>
             <h2>Lorem ipsum</h1>
             <p class="main-text">

@@ -53,14 +53,6 @@ header nav {
     margin: none;
 }
 
-#call-button {
-    width: 20%;
-    height: 50%;
-    margin-left: 20px;
-    text-wrap: pretty;
-    align-content: center;
-}
-
 #lower-nav a {
     display: block;
     width: 25% !important;
@@ -78,6 +70,36 @@ section {
     background-color: rgb(187, 187, 187);
     padding: 5% 5%;
 }
+
+#carousel_main {
+    position: relative;
+}
+
+#call-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 320;
+    height: 100px;
+    text-wrap: pretty;
+    align-content: center;
+}
+
+#form-buttons {
+    display: flex;
+    justify-content: space-between;
+    justify-items: right;
+    align-items: center;
+    padding-left: 30%;
+} 
+
+#form-buttons > * {
+    display: block;
+    width: 42%;
+    height: 75px;
+} 
 
 footer > * {
     display: block;
@@ -104,10 +126,4 @@ footer p {
 #social-media img {
     display: block;
     width: 100px;
-}
-
-#submit-button {
-    margin-top: 40px;
-    display: block;
-    justify-self: center;
 }
